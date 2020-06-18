@@ -15,8 +15,35 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.target>1.7</maven.compiler.target>	          
+    
+    <sonar.projectKey>slearn</sonar.projectKey>
+    <sonar.host.url>http://172.17.0.1:9000</sonar.host.url>
+	  <sonar.login>91c8f23cc6aa7c29839c8a9babd295073c3aa7a7</sonar.login>
+  
+    
   </properties>
+  
+  <distributionManagement>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>artifactory.codewithckk.com-snapshots</name>
+        <url>http://172.17.0.1:8081/artifactory/libs-snapshot-local</url>
+    </snapshotRepository>
+    <repository>
+        <id>central</id>
+        <name>artifactory.codewithckk.com-releases</name>
+        <url>http://172.17.0.1:8081/artifactory/libs-release-local</url>
+    </repository>
+</distributionManagement>
+  
+  <scm>
+		<connection>scm:git:git@github.com:patranivedita/first-maven-project.git</connection>
+		<developerConnection>scm:git:git@github.com:patranivedita/first-maven-project.git</developerConnection>
+		<url>git@github.com:patranivedita/first-maven-project.git</url>
+		<tag>HEAD</tag>
+	</scm>
+  
 
   <dependencies>
     <dependency>
