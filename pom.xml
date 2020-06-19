@@ -11,6 +11,15 @@
   <name>my-app</name>
   <!-- FIXME change it to the project's website -->
   <url>http://www.example.com</url>
+	
+  <parent>
+    
+    <artifactId>maven-jar-plugin</artifactId>
+    <version>3.0.2</version>
+    
+  </parent>
+	
+ 	
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
